@@ -1,6 +1,6 @@
 <?php
 
-namespace userwebdevelop;
+namespace userwebdevelop\ogconfigpages;
 
 use Yii;
 use yii\db\Query;
