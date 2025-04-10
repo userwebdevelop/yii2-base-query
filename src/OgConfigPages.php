@@ -6,7 +6,7 @@ use Yii;
 use yii\db\Query;
 use yii\db\Command;
 
-class OgConfigPages     
+class OgConfigPages extends \yii\console\Controller
 {
 
     public function actionInstall()
