@@ -5,7 +5,7 @@
 ```php
 'controllerMap' => [
     //остальной код
-    'userwebdevelop' => 'userwebdevelop\OgConfigPages'
+    'uwb-ogconfigpages' => 'userwebdevelop\ogconfigpages\OgConfigPages',
 ];
 ```
 
@@ -37,6 +37,6 @@
  ```
 
 # Команды
-`php yii userwebdevelop/install` - добавление функционала opengraph
+`php yii uwb-ogconfigpages/install` - добавление функционала opengraph
 
-`php yii userwebdevelop/uninstall` - удаление функционала opengraph
+`php yii uwb-ogconfigpages/uninstall` - удаление функционала opengraph
