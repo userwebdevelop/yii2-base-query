@@ -5,7 +5,7 @@
 Yii::$container->set(
     \yii\db\ActiveQuery::class,
     function ($container, $params) {
-        return new \userwebdevelop\yii2-base-query\BaseQuery($params[0]);
+        return new \userwebdevelop\yii2BaseQuery\BaseQuery($params[0]);
     }
 );
 ```
@@ -13,6 +13,6 @@ Yii::$container->set(
 activeAndSorted() — активные + сортировка по sort и id.
 active() — выборка только со status = 1.
 sortedBySort() — сортировка по sort ASC, id DESC.
-sortedByDate($attribute, $sortType = SORT_DESC) — сортировка по дате + id DESC.
+sortedByAttribute($attribute, $sortType = SORT_DESC) — сортировка по атрибуту + id DESC.
 
 Можно добавлять свои подобные методы, упрощающие работу с ORM в Yii2
