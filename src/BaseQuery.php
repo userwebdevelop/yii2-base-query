@@ -20,7 +20,7 @@ class BaseQuery extends ActiveQuery
     {
         return $this->orderBy(['sort' => SORT_ASC, 'id' => SORT_DESC]);
     }
-    public function sortedByDate($attribute, $sortType = SORT_DESC)
+    public function sortedByAttribute($attribute, $sortType = SORT_DESC)
     {
         return $this->orderBy([$attribute => $sortType, 'id' => SORT_DESC]);
     }
